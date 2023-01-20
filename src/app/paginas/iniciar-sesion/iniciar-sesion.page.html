@@ -1,0 +1,47 @@
+<ion-content color="dark">
+  <form [formGroup]="formulario" (ngSubmit)="enviar()" *ngIf="formulario">
+    <ion-grid>
+    <div class="ion-text-center">
+      <ion-row>
+        <ion-col>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Open_Source_Initiative_keyhole.svg/1200px-Open_Source_Initiative_keyhole.svg.png" alt="">
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-text-center">
+        <ion-col>
+          <h1>Bienvenido</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item color="dark">
+            <ion-label position="stacked">Usuario</ion-label>
+            <ion-input type="text" formControlName="username"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item color="dark">
+            <ion-label position="stacked">Contraseña</ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item color="dark">
+            <ion-label>Recuerdame</ion-label>
+            <ion-toggle></ion-toggle>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" expand="block">Iniciar Sesion</ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+    </ion-grid>
+  </form>
+</ion-content>
